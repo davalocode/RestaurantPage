@@ -1,0 +1,130 @@
+body {
+    background: url(img/fondo.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*---------------------HEADER-----------------------*/
+.titles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    text-align: center;
+    height: 100px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.859);
+}
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.859);
+}
+.links span {
+    cursor: pointer;
+    margin: 1%;
+}
+.links span:hover {
+    transition: all 300ms;
+    margin-top: 10px;
+    border-bottom: 1px solid blanchedalmond;
+}
+
+/*------------------GENERAL BODY----------------------------*/
+#content {
+    text-align: center;
+    width: 50%;
+    margin: 0px auto;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.859);
+    margin-top: 50px;
+    
+}
+
+/*--------------------HOME------------------------*/    
+.home {
+    animation: fadeIn 1.5s;
+}
+
+.home p:nth-child(1) {
+    padding: 20px;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+.home p:nth-child(4) {
+    padding: 20px;
+}
+
+.home .img_cheff {
+    width: 30%;
+    border-radius: 20px;
+}
+
+/*----------------------MENU----------------------*/
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    animation: fadeIn 1.5s;
+}
+.pizza {
+    width: 46%;
+    margin: 2%;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+.pizza p:nth-child(1) {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.pizza:hover {
+    transition: all 300ms;
+    background-color: rgba(255, 235, 205, 0.13);
+}
+.pizza img {
+    width: 50%;
+}
+
+/*---------------------CONTACT-----------------------*/
+
+.contact div {
+    display: flex;
+    align-items: center;
+    animation: fadeIn 1.5s;
+}
+.contact div:hover {
+    transition: all 300ms;
+    background-color: rgba(255, 235, 205, 0.13);
+}
+
+.contact img {
+    width: 5%;
+    margin: 2%;
+}
+.address_img img {
+    width: 96%;
+}
+
+/*-------------------------------------*/
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+@media screen and (max-width:800px) {
+    #content {
+        width: 100%;
+    }
+    .links span:hover {
+        margin-bottom: 20px;
+        border-bottom: 1px solid blanchedalmond;
+    }
+}
